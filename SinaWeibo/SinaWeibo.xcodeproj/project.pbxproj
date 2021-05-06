@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */; };
-		17C1CE401E1D2BB10038FF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE3F1E1D2BB10038FF21 /* ViewController.swift */; };
-		17C1CE431E1D2BB10038FF21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C1CE411E1D2BB10038FF21 /* Main.storyboard */; };
 		17C1CE451E1D2BB10038FF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C1CE441E1D2BB10038FF21 /* Assets.xcassets */; };
-		17C1CE481E1D2BB10038FF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C1CE461E1D2BB10038FF21 /* LaunchScreen.storyboard */; };
+		17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE631E1D34B10038FF21 /* ZTDiscoverTableViewController.swift */; };
+		17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE651E1D34C30038FF21 /* ZTHomeTableViewController.swift */; };
+		17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */; };
+		17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE691E1D34F00038FF21 /* ZTMessageTableViewController.swift */; };
+		17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE6B1E1D35020038FF21 /* ZTProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17C1CE3A1E1D2BB10038FF21 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17C1CE3F1E1D2BB10038FF21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17C1CE421E1D2BB10038FF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17C1CE441E1D2BB10038FF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17C1CE471E1D2BB10038FF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C1CE491E1D2BB10038FF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C1CE631E1D34B10038FF21 /* ZTDiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTDiscoverTableViewController.swift; sourceTree = "<group>"; };
+		17C1CE651E1D34C30038FF21 /* ZTHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTHomeTableViewController.swift; sourceTree = "<group>"; };
+		17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTTabBarController.swift; sourceTree = "<group>"; };
+		17C1CE691E1D34F00038FF21 /* ZTMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTMessageTableViewController.swift; sourceTree = "<group>"; };
+		17C1CE6B1E1D35020038FF21 /* ZTProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,176 @@
 		17C1CE3C1E1D2BB10038FF21 /* SinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				17C1CE4F1E1D318C0038FF21 /* Classes */,
 				17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */,
-				17C1CE3F1E1D2BB10038FF21 /* ViewController.swift */,
-				17C1CE411E1D2BB10038FF21 /* Main.storyboard */,
 				17C1CE441E1D2BB10038FF21 /* Assets.xcassets */,
-				17C1CE461E1D2BB10038FF21 /* LaunchScreen.storyboard */,
 				17C1CE491E1D2BB10038FF21 /* Info.plist */,
 			);
 			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		17C1CE4F1E1D318C0038FF21 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE501E1D318C0038FF21 /* Model */,
+				17C1CE511E1D318C0038FF21 /* Tools */,
+				17C1CE521E1D318C0038FF21 /* View */,
+				17C1CE621E1D318C0038FF21 /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		17C1CE501E1D318C0038FF21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17C1CE511E1D318C0038FF21 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		17C1CE521E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE591E1D318C0038FF21 /* Main */,
+				17C1CE531E1D318C0038FF21 /* Discover */,
+				17C1CE561E1D318C0038FF21 /* Home */,
+				17C1CE5C1E1D318C0038FF21 /* Message */,
+				17C1CE5F1E1D318C0038FF21 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE531E1D318C0038FF21 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE541E1D318C0038FF21 /* Controller */,
+				17C1CE551E1D318C0038FF21 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		17C1CE541E1D318C0038FF21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE631E1D34B10038FF21 /* ZTDiscoverTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17C1CE551E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE561E1D318C0038FF21 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE571E1D318C0038FF21 /* Controller */,
+				17C1CE581E1D318C0038FF21 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		17C1CE571E1D318C0038FF21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE651E1D34C30038FF21 /* ZTHomeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17C1CE581E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE591E1D318C0038FF21 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE5A1E1D318C0038FF21 /* Controller */,
+				17C1CE5B1E1D318C0038FF21 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		17C1CE5A1E1D318C0038FF21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17C1CE5B1E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE5C1E1D318C0038FF21 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE5D1E1D318C0038FF21 /* Controller */,
+				17C1CE5E1E1D318C0038FF21 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		17C1CE5D1E1D318C0038FF21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE691E1D34F00038FF21 /* ZTMessageTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17C1CE5E1E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE5F1E1D318C0038FF21 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE601E1D318C0038FF21 /* Controller */,
+				17C1CE611E1D318C0038FF21 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		17C1CE601E1D318C0038FF21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE6B1E1D35020038FF21 /* ZTProfileTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17C1CE611E1D318C0038FF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17C1CE621E1D318C0038FF21 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +256,7 @@
 		17C1CE321E1D2BB10038FF21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZT;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = sharayuki;
@@ -123,9 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C1CE481E1D2BB10038FF21 /* LaunchScreen.storyboard in Resources */,
 				17C1CE451E1D2BB10038FF21 /* Assets.xcassets in Resources */,
-				17C1CE431E1D2BB10038FF21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C1CE401E1D2BB10038FF21 /* ViewController.swift in Sources */,
+				17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */,
+				17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */,
+				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
+				17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */,
+				17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */,
 				17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		17C1CE411E1D2BB10038FF21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17C1CE421E1D2BB10038FF21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		17C1CE461E1D2BB10038FF21 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17C1CE471E1D2BB10038FF21 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		17C1CE4A1E1D2BB10038FF21 /* Debug */ = {
@@ -258,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
@@ -270,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
