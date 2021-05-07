@@ -12,6 +12,15 @@ class ZTTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       let ztbar = ZTTabbar()
+       
+        ztbar.barClosure = {
+        
+            print(1)
+        
+        }
+       setValue(ztbar, forKey: "tabBar")
         //添加子控制器
        addChildViewControllers()
         
@@ -30,7 +39,7 @@ class ZTTabBarController: UITabBarController {
 //添加单个子控制器
     func addChildVC(vc:UITableViewController,imgName:String,title:String) -> UINavigationController {
         
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = ZTBaseNavController(rootViewController: vc)
         
         vc.title = title
         

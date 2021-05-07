@@ -14,6 +14,10 @@
 		17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */; };
 		17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE691E1D34F00038FF21 /* ZTMessageTableViewController.swift */; };
 		17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE6B1E1D35020038FF21 /* ZTProfileTableViewController.swift */; };
+		17C1CE6E1E1D49B40038FF21 /* ZTTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE6D1E1D49B40038FF21 /* ZTTabbar.swift */; };
+		17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */; };
+		17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */; };
+		17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTTabBarController.swift; sourceTree = "<group>"; };
 		17C1CE691E1D34F00038FF21 /* ZTMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTMessageTableViewController.swift; sourceTree = "<group>"; };
 		17C1CE6B1E1D35020038FF21 /* ZTProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTProfileTableViewController.swift; sourceTree = "<group>"; };
+		17C1CE6D1E1D49B40038FF21 /* ZTTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTTabbar.swift; sourceTree = "<group>"; };
+		17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTOtherTableViewController.swift; sourceTree = "<group>"; };
+		17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTBaseNavController.swift; sourceTree = "<group>"; };
+		17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 		17C1CE4F1E1D318C0038FF21 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				17C1CE6F1E1D53A20038FF21 /* Other */,
 				17C1CE501E1D318C0038FF21 /* Model */,
 				17C1CE511E1D318C0038FF21 /* Tools */,
 				17C1CE521E1D318C0038FF21 /* View */,
@@ -87,6 +96,7 @@
 		17C1CE511E1D318C0038FF21 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				17C1CE741E1D55370038FF21 /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */,
+				17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 		17C1CE5B1E1D318C0038FF21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17C1CE6D1E1D49B40038FF21 /* ZTTabbar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +240,22 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17C1CE6F1E1D53A20038FF21 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		17C1CE741E1D55370038FF21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +331,11 @@
 			files = (
 				17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */,
 				17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */,
+				17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */,
 				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
+				17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */,
+				17C1CE6E1E1D49B40038FF21 /* ZTTabbar.swift in Sources */,
+				17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */,
 				17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */,
 				17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */,
 				17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */,

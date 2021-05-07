@@ -1,28 +1,27 @@
+
+
 //
-//  ZTHomeTableViewController.swift
+//  ZTOtherTableViewController.swift
 //  SinaWeibo
 //
-//  Created by sharayuki on 2017/1/4.
+//  Created by sharayuki on 2017/1/5.
 //  Copyright © 2017年 sharayuki. All rights reserved.
 //
 
 import UIKit
 
-class ZTHomeTableViewController: UITableViewController {
+class ZTOtherTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", imgName: "navigationbar_pop", target: self, action: #selector(clickOther))
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    func clickOther() {
-        
-        let otherVC = ZTOtherTableViewController()
-        
-        navigationController?.pushViewController(otherVC, animated: true)
-        
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
