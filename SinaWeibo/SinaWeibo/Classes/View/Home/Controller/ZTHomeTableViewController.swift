@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ZTHomeTableViewController: UITableViewController {
+class ZTHomeTableViewController: ZTBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", imgName: "navigationbar_pop", target: self, action: #selector(clickOther))
+        
+        visitorView.changeLoginView(imageName: "visitordiscover_feed_image_smallicon", title: "关注一些人到这里看看有什么惊喜", isHome: true)
+        
     }
 
     func clickOther() {

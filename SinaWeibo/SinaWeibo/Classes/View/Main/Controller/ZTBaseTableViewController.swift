@@ -1,25 +1,47 @@
 //
-//  ZTProfileTableViewController.swift
+//  ZTBaseTableViewController.swift
 //  SinaWeibo
 //
-//  Created by sharayuki on 2017/1/4.
+//  Created by sharayuki on 2017/1/6.
 //  Copyright © 2017年 sharayuki. All rights reserved.
 //
 
 import UIKit
 
-class ZTProfileTableViewController: ZTBaseTableViewController {
+class ZTBaseTableViewController: UITableViewController,LoginViewDelegate {
+
+    
+    var userLogin = false
+    
+    lazy var visitorView:ZTLoginView = ZTLoginView()
+    
+    override func loadView() {
+                
+        if userLogin {
+            
+            super.loadView()
+            
+        }else{
+            
+            self.view = visitorView
+            
+            visitorView.delegate = self
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        visitorView.changeLoginView(imageName: "visitordiscover_image_profile", title: "登录后,我的页面就能看见啦!", isHome: false)
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    //MARK: 代理方法
+    func userWillLogin() {
+        
+        print("我来处理登录")
+    }
+    func userWillRegist() {
+        
+        print("我来处理注册")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

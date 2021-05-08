@@ -8,16 +8,13 @@
 
 import UIKit
 
-class ZTDiscoverTableViewController: UITableViewController {
+class ZTDiscoverTableViewController: ZTBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        visitorView.changeLoginView(imageName: "visitordiscover_image_message", title: "登录后,发现页面就能看见啦!", isHome: false)
+        
     }
 
     override func didReceiveMemoryWarning() {

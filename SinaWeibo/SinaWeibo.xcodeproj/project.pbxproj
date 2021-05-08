@@ -18,6 +18,11 @@
 		17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */; };
 		17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */; };
 		17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */; };
+		17DF199A1E1FBC4C000CCA79 /* ZTBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF19991E1FBC4C000CCA79 /* ZTBaseTableViewController.swift */; };
+		17DF199C1E1FBCBB000CCA79 /* ZTLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF199B1E1FBCBB000CCA79 /* ZTLoginView.swift */; };
+		17DF199E1E1FC214000CCA79 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF199D1E1FC214000CCA79 /* UILabel+Extension.swift */; };
+		17DF19A01E1FC5E7000CCA79 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF199F1E1FC5E7000CCA79 /* UIButton+Extension.swift */; };
+		C8892FA830A49D6D8E9D8D2A /* Pods_SinaWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0012A349849AFA73506ABA /* Pods_SinaWeibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,13 @@
 		17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTOtherTableViewController.swift; sourceTree = "<group>"; };
 		17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTBaseNavController.swift; sourceTree = "<group>"; };
 		17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		17DF19991E1FBC4C000CCA79 /* ZTBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTBaseTableViewController.swift; sourceTree = "<group>"; };
+		17DF199B1E1FBCBB000CCA79 /* ZTLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTLoginView.swift; sourceTree = "<group>"; };
+		17DF199D1E1FC214000CCA79 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		17DF199F1E1FC5E7000CCA79 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		52C4682AAB715ABF44609E64 /* Pods-SinaWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		5897BE609B640D55F99D20AE /* Pods-SinaWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		8E0012A349849AFA73506ABA /* Pods_SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8892FA830A49D6D8E9D8D2A /* Pods_SinaWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0914ED3D22A23FE9D940E97E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0012A349849AFA73506ABA /* Pods_SinaWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		17C1CE311E1D2BB10038FF21 = {
 			isa = PBXGroup;
 			children = (
 				17C1CE3C1E1D2BB10038FF21 /* SinaWeibo */,
 				17C1CE3B1E1D2BB10038FF21 /* Products */,
+				A81C1325846B5A538EB26BAA /* Pods */,
+				0914ED3D22A23FE9D940E97E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +198,7 @@
 			children = (
 				17C1CE671E1D34DF0038FF21 /* ZTTabBarController.swift */,
 				17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */,
+				17DF19991E1FBC4C000CCA79 /* ZTBaseTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				17C1CE6D1E1D49B40038FF21 /* ZTTabbar.swift */,
+				17DF199B1E1FBCBB000CCA79 /* ZTLoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,8 +279,19 @@
 			isa = PBXGroup;
 			children = (
 				17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */,
+				17DF199D1E1FC214000CCA79 /* UILabel+Extension.swift */,
+				17DF199F1E1FC5E7000CCA79 /* UIButton+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A81C1325846B5A538EB26BAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52C4682AAB715ABF44609E64 /* Pods-SinaWeibo.debug.xcconfig */,
+				5897BE609B640D55F99D20AE /* Pods-SinaWeibo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17C1CE4C1E1D2BB10038FF21 /* Build configuration list for PBXNativeTarget "SinaWeibo" */;
 			buildPhases = (
+				657BF22C60BE9C02FA8F7F59 /* [CP] Check Pods Manifest.lock */,
 				17C1CE361E1D2BB10038FF21 /* Sources */,
 				17C1CE371E1D2BB10038FF21 /* Frameworks */,
 				17C1CE381E1D2BB10038FF21 /* Resources */,
+				5EFC27E67EA236975E0C3EE1 /* [CP] Embed Pods Frameworks */,
+				2E4F44EB8A6CFC67FE984942 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +363,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E4F44EB8A6CFC67FE984942 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EFC27E67EA236975E0C3EE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		657BF22C60BE9C02FA8F7F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17C1CE361E1D2BB10038FF21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -332,13 +419,17 @@
 				17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */,
 				17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */,
 				17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */,
+				17DF199A1E1FBC4C000CCA79 /* ZTBaseTableViewController.swift in Sources */,
 				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
 				17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */,
+				17DF199C1E1FBCBB000CCA79 /* ZTLoginView.swift in Sources */,
 				17C1CE6E1E1D49B40038FF21 /* ZTTabbar.swift in Sources */,
 				17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */,
 				17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */,
 				17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */,
+				17DF199E1E1FC214000CCA79 /* UILabel+Extension.swift in Sources */,
 				17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */,
+				17DF19A01E1FC5E7000CCA79 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +529,7 @@
 		};
 		17C1CE4D1E1D2BB10038FF21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C4682AAB715ABF44609E64 /* Pods-SinaWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -451,6 +543,7 @@
 		};
 		17C1CE4E1E1D2BB10038FF21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5897BE609B640D55F99D20AE /* Pods-SinaWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -481,6 +574,7 @@
 				17C1CE4E1E1D2BB10038FF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

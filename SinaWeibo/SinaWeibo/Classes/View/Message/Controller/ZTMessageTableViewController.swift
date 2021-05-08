@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ZTMessageTableViewController: UITableViewController {
+class ZTMessageTableViewController: ZTBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        visitorView.changeLoginView(imageName: "visitordiscover_image_message", title: "登录后,消息页面就能看见啦!", isHome: false)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
