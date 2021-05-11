@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1780CF241E22492200030B82 /* ZTOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF231E22492200030B82 /* ZTOAuthViewController.swift */; };
+		1780CF261E225BF400030B82 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF251E225BF400030B82 /* Common.swift */; };
+		1780CF541E226B1100030B82 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF431E226B1100030B82 /* SVIndefiniteAnimatedView.m */; };
+		1780CF551E226B1100030B82 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF451E226B1100030B82 /* SVProgressAnimatedView.m */; };
+		1780CF561E226B1100030B82 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF471E226B1100030B82 /* SVProgressHUD.m */; };
+		1780CF571E226B1100030B82 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF491E226B1100030B82 /* SVRadialGradientLayer.m */; };
+		1780CF581E226B1100030B82 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1780CF4A1E226B1100030B82 /* SVProgressHUD.bundle */; };
+		1780CF591E226B1100030B82 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1780CF4C1E226B1100030B82 /* Info.plist */; };
+		1780CF5A1E226B1100030B82 /* SVProgressHUD.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1780CF4E1E226B1100030B82 /* SVProgressHUD.xcconfig */; };
+		1780CF5B1E226B1100030B82 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF4F1E226B1100030B82 /* SVProgressHUD-dummy.m */; };
+		1780CF5D1E22828700030B82 /* ZTNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */; };
+		1780CF5F1E2296AF00030B82 /* ZTUserAount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */; };
+		17A2B8461E22B9E400F80371 /* ZTUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */; };
 		17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */; };
 		17C1CE451E1D2BB10038FF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C1CE441E1D2BB10038FF21 /* Assets.xcassets */; };
 		17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE631E1D34B10038FF21 /* ZTDiscoverTableViewController.swift */; };
@@ -26,6 +39,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1780CF231E22492200030B82 /* ZTOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTOAuthViewController.swift; sourceTree = "<group>"; };
+		1780CF251E225BF400030B82 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		1780CF411E22699F00030B82 /* bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		1780CF421E226B1100030B82 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		1780CF431E226B1100030B82 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1780CF441E226B1100030B82 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		1780CF451E226B1100030B82 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		1780CF461E226B1100030B82 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		1780CF471E226B1100030B82 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		1780CF481E226B1100030B82 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		1780CF491E226B1100030B82 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		1780CF4A1E226B1100030B82 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		1780CF4C1E226B1100030B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1780CF4D1E226B1100030B82 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		1780CF4E1E226B1100030B82 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		1780CF4F1E226B1100030B82 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		1780CF501E226B1100030B82 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		1780CF511E226B1100030B82 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZTNetworkTool.swift; path = Extension/ZTNetworkTool.swift; sourceTree = "<group>"; };
+		1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTUserAount.swift; sourceTree = "<group>"; };
+		17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTUserAccountViewModel.swift; sourceTree = "<group>"; };
 		17C1CE3A1E1D2BB10038FF21 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17C1CE441E1D2BB10038FF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +102,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1780CF221E2248CF00030B82 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1780CF231E22492200030B82 /* ZTOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		1780CF4B1E226B1100030B82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1780CF4A1E226B1100030B82 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1780CF521E226B1100030B82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1780CF4C1E226B1100030B82 /* Info.plist */,
+				1780CF4D1E226B1100030B82 /* SVProgressHUD.modulemap */,
+				1780CF4E1E226B1100030B82 /* SVProgressHUD.xcconfig */,
+				1780CF4F1E226B1100030B82 /* SVProgressHUD-dummy.m */,
+				1780CF501E226B1100030B82 /* SVProgressHUD-prefix.pch */,
+				1780CF511E226B1100030B82 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		1780CF531E226B1100030B82 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1780CF421E226B1100030B82 /* SVIndefiniteAnimatedView.h */,
+				1780CF431E226B1100030B82 /* SVIndefiniteAnimatedView.m */,
+				1780CF441E226B1100030B82 /* SVProgressAnimatedView.h */,
+				1780CF451E226B1100030B82 /* SVProgressAnimatedView.m */,
+				1780CF461E226B1100030B82 /* SVProgressHUD.h */,
+				1780CF471E226B1100030B82 /* SVProgressHUD.m */,
+				1780CF481E226B1100030B82 /* SVRadialGradientLayer.h */,
+				1780CF491E226B1100030B82 /* SVRadialGradientLayer.m */,
+				1780CF4B1E226B1100030B82 /* Resources */,
+				1780CF521E226B1100030B82 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = ../../../Pods/SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		17C1CE311E1D2BB10038FF21 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +175,7 @@
 				17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */,
 				17C1CE441E1D2BB10038FF21 /* Assets.xcassets */,
 				17C1CE491E1D2BB10038FF21 /* Info.plist */,
+				1780CF411E22699F00030B82 /* bridge.h */,
 			);
 			path = SinaWeibo;
 			sourceTree = "<group>";
@@ -112,6 +195,7 @@
 		17C1CE501E1D318C0038FF21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +203,9 @@
 		17C1CE511E1D318C0038FF21 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */,
+				1780CF251E225BF400030B82 /* Common.swift */,
+				1780CF531E226B1100030B82 /* SVProgressHUD */,
 				17C1CE741E1D55370038FF21 /* Extension */,
 			);
 			path = Tools;
@@ -127,6 +214,7 @@
 		17C1CE521E1D318C0038FF21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1780CF221E2248CF00030B82 /* OAuth */,
 				17C1CE591E1D318C0038FF21 /* Main */,
 				17C1CE531E1D318C0038FF21 /* Discover */,
 				17C1CE561E1D318C0038FF21 /* Home */,
@@ -263,6 +351,7 @@
 		17C1CE621E1D318C0038FF21 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -357,7 +446,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1780CF5A1E226B1100030B82 /* SVProgressHUD.xcconfig in Resources */,
 				17C1CE451E1D2BB10038FF21 /* Assets.xcassets in Resources */,
+				1780CF581E226B1100030B82 /* SVProgressHUD.bundle in Resources */,
+				1780CF591E226B1100030B82 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,12 +508,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1780CF261E225BF400030B82 /* Common.swift in Sources */,
 				17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */,
 				17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */,
 				17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */,
 				17DF199A1E1FBC4C000CCA79 /* ZTBaseTableViewController.swift in Sources */,
+				1780CF551E226B1100030B82 /* SVProgressAnimatedView.m in Sources */,
+				1780CF241E22492200030B82 /* ZTOAuthViewController.swift in Sources */,
+				1780CF561E226B1100030B82 /* SVProgressHUD.m in Sources */,
+				1780CF541E226B1100030B82 /* SVIndefiniteAnimatedView.m in Sources */,
+				1780CF5B1E226B1100030B82 /* SVProgressHUD-dummy.m in Sources */,
 				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
 				17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */,
+				1780CF5D1E22828700030B82 /* ZTNetworkTool.swift in Sources */,
 				17DF199C1E1FBCBB000CCA79 /* ZTLoginView.swift in Sources */,
 				17C1CE6E1E1D49B40038FF21 /* ZTTabbar.swift in Sources */,
 				17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */,
@@ -429,7 +528,10 @@
 				17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */,
 				17DF199E1E1FC214000CCA79 /* UILabel+Extension.swift in Sources */,
 				17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */,
+				1780CF5F1E2296AF00030B82 /* ZTUserAount.swift in Sources */,
+				17A2B8461E22B9E400F80371 /* ZTUserAccountViewModel.swift in Sources */,
 				17DF19A01E1FC5E7000CCA79 /* UIButton+Extension.swift in Sources */,
+				1780CF571E226B1100030B82 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/sharayuki/Desktop/SinaWeibo/SinaWeibo/SinaWeibo/bridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -551,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/sharayuki/Desktop/SinaWeibo/SinaWeibo/SinaWeibo/bridge.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

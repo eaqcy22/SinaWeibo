@@ -11,7 +11,7 @@ import UIKit
 class ZTBaseTableViewController: UITableViewController,LoginViewDelegate {
 
     
-    var userLogin = false
+    var userLogin = ZTUserAccountViewModel.shared.loadUserAccount() != nil
     
     lazy var visitorView:ZTLoginView = ZTLoginView()
     
@@ -35,8 +35,13 @@ class ZTBaseTableViewController: UITableViewController,LoginViewDelegate {
 
     //MARK: 代理方法
     func userWillLogin() {
+    //跳转OAuth登录
+        let oauthVC = ZTOAuthViewController()
         
-        print("我来处理登录")
+        let nav = ZTBaseNavController(rootViewController: oauthVC)
+        
+        navigationController?.present(nav, animated: true, completion: nil)
+
     }
     func userWillRegist() {
         

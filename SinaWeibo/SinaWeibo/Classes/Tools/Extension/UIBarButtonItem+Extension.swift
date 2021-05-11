@@ -10,13 +10,16 @@ import UIKit
 
 extension UIBarButtonItem{
 
-    convenience init(title: String,imgName: String,target: Any?,action: Selector?) {
+    convenience init(title: String,imgName: String?,target: Any?,action: Selector?) {
         
         let btn = UIButton()
         
-        btn.setImage(UIImage(named:imgName), for: .normal)
-        
-        btn.setImage(UIImage(named:imgName + "_highlighted"), for: .highlighted)
+        if let imageName = imgName{
+            
+            btn.setImage(UIImage(named:imageName), for: .normal)
+            
+            btn.setImage(UIImage(named:imageName + "_highlighted"), for: .highlighted)
+        }
         
         btn.setTitle(title, for: .normal)
         
