@@ -28,7 +28,7 @@ class ZTStatus: NSObject {
     var pic_urls: [ZTPicInfo]?
     
     ///转发微博
-    var retweented_status: ZTStatus?
+    var retweeted_status: ZTStatus?
     //YYModel的返回自定义容器元素处理方法
     static func modelContainerPropertyGenericClass()->[String : Any]?{
     

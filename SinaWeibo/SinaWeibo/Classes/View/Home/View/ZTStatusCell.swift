@@ -20,6 +20,8 @@ private let itemWidth : CGFloat = (maxWidth - 2 * picWidthMargin)/3//单张图�
 class ZTStatusCell: UITableViewCell {
     //底部视图
     @IBOutlet weak var buttomView: UIStackView!
+    //转发微博的正文label
+    @IBOutlet weak var lb_retweentContent: UILabel?
     //图片视图顶部约束
     @IBOutlet weak var picViewTopCons: NSLayoutConstraint!
     //图片视图的layout
@@ -55,6 +57,8 @@ class ZTStatusCell: UITableViewCell {
             
             lb_content.text = viewModel?.status?.text
             
+            lb_retweentContent?.text = viewModel?.status?.retweeted_status?.text
+            
             lb_name.text = viewModel?.status?.user?.screen_name
             
             headIcon.sd_setImage(with: viewModel?.headURL)
@@ -63,17 +67,17 @@ class ZTStatusCell: UITableViewCell {
             
             rankView.image = viewModel?.mbrankImage
             //设置图片视图宽高
-            let count = viewModel?.status?.pic_urls?.count ?? 0
+            let count = viewModel?.imageInfo?.count ?? 0
             
             let pSize = caclulatePicSize(count: CGFloat(count))
             
-            print(pSize)
+          //  print(pSize)
             //修改图片视图的宽高
             picHight.constant = pSize.height
             
             picWidth.constant = pSize.width
             //设置图片视图的模型数组
-            picView.pic_url = viewModel?.status?.pic_urls
+            picView.pic_url = viewModel?.imageInfo
             //FlowLayout设置
             FlowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
             FlowLayout.minimumInteritemSpacing = CGFloat(picWidthMargin)
@@ -88,12 +92,16 @@ class ZTStatusCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        //取消选中风格
+        self.selectionStyle = .none
         //控件设置
         lb_content.numberOfLines = 0
         
         lb_content.preferredMaxLayoutWidth = screen_width - 2 * margin
         
+        lb_retweentContent?.numberOfLines = 0
+        
+        lb_retweentContent?.preferredMaxLayoutWidth = screen_width - 2 * margin
         //picView.backgroundColor = UIColor.randomColor
         
     }

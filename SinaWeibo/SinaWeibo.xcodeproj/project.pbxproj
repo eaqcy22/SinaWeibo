@@ -14,6 +14,7 @@
 		17348E6B1E248F6F0039348D /* ZTPicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17348E6A1E248F6F0039348D /* ZTPicInfo.swift */; };
 		17348E6D1E24C4220039348D /* ZTPicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17348E6C1E24C4220039348D /* ZTPicViewCell.swift */; };
 		17348E6F1E24C5CB0039348D /* ZTPicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17348E6E1E24C5CB0039348D /* ZTPicCollectionView.swift */; };
+		174165561E26767D0043A1BC /* ZTRefreashControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174165551E26767D0043A1BC /* ZTRefreashControl.swift */; };
 		174463C21E23F87900F42771 /* ZTHomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174463C11E23F87900F42771 /* ZTHomeCellModel.swift */; };
 		176D09D81E23D33200DDAF4E /* ZTStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D09D71E23D33200DDAF4E /* ZTStatus.swift */; };
 		176D09DA1E23E67B00DDAF4E /* ZTHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176D09D91E23E67B00DDAF4E /* ZTHomeViewModel.swift */; };
@@ -56,6 +57,7 @@
 		17348E6A1E248F6F0039348D /* ZTPicInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPicInfo.swift; sourceTree = "<group>"; };
 		17348E6C1E24C4220039348D /* ZTPicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPicViewCell.swift; sourceTree = "<group>"; };
 		17348E6E1E24C5CB0039348D /* ZTPicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPicCollectionView.swift; sourceTree = "<group>"; };
+		174165551E26767D0043A1BC /* ZTRefreashControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTRefreashControl.swift; sourceTree = "<group>"; };
 		174463C11E23F87900F42771 /* ZTHomeCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTHomeCellModel.swift; sourceTree = "<group>"; };
 		176D09D71E23D33200DDAF4E /* ZTStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTStatus.swift; sourceTree = "<group>"; };
 		176D09D91E23E67B00DDAF4E /* ZTHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTHomeViewModel.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				17348E6C1E24C4220039348D /* ZTPicViewCell.swift */,
 				17348E6E1E24C5CB0039348D /* ZTPicCollectionView.swift */,
 				17AA3C571E24FC1700A19E7C /* ZTRetweetedStatusCell.xib */,
+				174165551E26767D0043A1BC /* ZTRefreashControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				1780CF551E226B1100030B82 /* SVProgressAnimatedView.m in Sources */,
 				1780CF241E22492200030B82 /* ZTOAuthViewController.swift in Sources */,
 				1780CF561E226B1100030B82 /* SVProgressHUD.m in Sources */,
+				174165561E26767D0043A1BC /* ZTRefreashControl.swift in Sources */,
 				1780CF541E226B1100030B82 /* SVIndefiniteAnimatedView.m in Sources */,
 				1780CF5B1E226B1100030B82 /* SVProgressHUD-dummy.m in Sources */,
 				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
@@ -676,7 +680,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -692,7 +696,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

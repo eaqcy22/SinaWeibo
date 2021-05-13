@@ -27,6 +27,17 @@ class ZTHomeCellModel: NSObject {
             dealverifiedImage()
         }
     }
+    ///判断并返回转发微博或原创微博的视图模型
+    var imageInfo:[ZTPicInfo]?{
+    
+        if status?.retweeted_status != nil {
+        
+            //转发微博
+            return status?.retweeted_status?.pic_urls
+        }
+        //原创微博
+        return status?.pic_urls
+    }
     private func dealmbrankImage(){
         //会员等级 0 - 6
         let mbrank = status?.user?.mbrank ?? 0

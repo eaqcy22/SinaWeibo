@@ -13,7 +13,13 @@ private let retweentCellid = "RetweentCell"
 class ZTHomeTableViewController: ZTBaseTableViewController {
 //视图模型
     let homeViewModel:ZTHomeViewModel = ZTHomeViewModel()
+//懒加载小菊花控件
+    lazy var indicatorView:UIActivityIndicatorView? = {
     
+        let inV = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        
+        return inV
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         if !userLogin{
@@ -34,26 +40,41 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
         let cellNib = UINib(nibName: "ZTStatusCell", bundle: nil)
         
         let retweentNib = UINib(nibName: "ZTRetweetedStatusCell", bundle: nil)
+        //实例化refreshControl
+        let refreshC = ZTRefreashControl()
+        
+        refreshC.addTarget(self, action: #selector(loadData), for: .valueChanged)
         
         tableView.register(cellNib, forCellReuseIdentifier: statusCellid)
         
         tableView.register(retweentNib, forCellReuseIdentifier: retweentCellid)
+        //取消分隔线
+        tableView.separatorStyle = .none
+        //设置表尾视图为加载视图
+        tableView.tableFooterView = indicatorView
+       // self.tableView.rowHeight = 700
+     //   tableView.tableHeaderView = refreshC
+       // tableView.contentInset = UIEdgeInsetsMake(-60, 0, 0, 0)
         
-        self.tableView.rowHeight = 1000
+        view.addSubview(refreshC)
+        
         
     }
 //MARK: 加载数据
     func loadData() {
         //加载数据
-        homeViewModel.loadData { (isSuccess) in
+        homeViewModel.loadData(isPullUp: (indicatorView?.isAnimating)!) { (isSuccess) in
             if !isSuccess{
                 
                 print("加载错误")
             }
+            //加载数据完毕停止动画
+            self.refreshControl?.endRefreshing()
+            //停止转动小菊花
+            self.indicatorView?.stopAnimating()
             
             self.tableView.reloadData()
         }
-
     }
 //MARK: barbuttonitem
     func clickOther() {
@@ -92,16 +113,47 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath) as! ZTStatusCell
             
-            print(cellModel.yy_modelDescription())
+        //    print(cellModel.yy_modelDescription(),cellid)
             
             cell.viewModel = cellModel
             
             return cell
         }
+//返回行高的方法
+        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+            let cellModel = self.homeViewModel.viewModelArray[indexPath.row]
+            
+            let cellid = getCellid(viewModel: cellModel)
+            
+            let cell = getCellById(cellid: cellid)
+            
+            cell.viewModel = cellModel
+           //强制刷新子控件的frame
+            cell.layoutIfNeeded()
+            
+            return cell.buttomView.frame.maxY
+            
+        }
+//根据cellid来返回不同类型的cell方法
+        private func getCellById(cellid:String) -> ZTStatusCell{
+            
+            if cellid == statusCellid{
+            
+                let cell = UINib(nibName: "ZTStatusCell", bundle: nil).instantiate(withOwner: nil, options: nil).last as! ZTStatusCell
+                
+                return cell
+            }else{
+                let cell = UINib(nibName: "ZTRetweetedStatusCell", bundle: nil).instantiate(withOwner: nil, options: nil).last as! ZTStatusCell
+                
+                return cell
+            }
+            
+        }
 //判断cell的类型方法
         private func getCellid(viewModel:ZTHomeCellModel)->String{
         
-            if viewModel.status?.retweented_status != nil {
+            if viewModel.status?.retweeted_status != nil {
                 
                 return retweentCellid
             }else{
@@ -111,7 +163,16 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
             
         
         }
-    
+//MARK: 判断是否需要静默加载
+        override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+            
+            if indexPath.row == self.homeViewModel.viewModelArray.count - 2 && indicatorView?.isAnimating == false{
+             //开始静默加载
+                indicatorView?.startAnimating()
+                
+                loadData()
+            }
+        }
 }
 
 
