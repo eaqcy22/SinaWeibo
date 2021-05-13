@@ -21,7 +21,7 @@ class ZTNetworkTool: AFHTTPSessionManager {
         let tools = ZTNetworkTool(baseURL: nil)
         
         tools.responseSerializer.acceptableContentTypes?.insert("text/plain")
-        
+    
         return tools
     
     }()

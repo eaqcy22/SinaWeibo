@@ -11,7 +11,7 @@ import UIKit
 class ZTBaseTableViewController: UITableViewController,LoginViewDelegate {
 
     
-    var userLogin = ZTUserAccountViewModel.shared.loadUserAccount() != nil
+    var userLogin = ZTUserAccountViewModel.shared.userLogin
     
     lazy var visitorView:ZTLoginView = ZTLoginView()
     

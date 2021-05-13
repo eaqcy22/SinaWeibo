@@ -94,9 +94,11 @@ extension ZTOAuthViewController:UIWebViewDelegate{
                 }
                 
                 print("登录成功")
+                //切换到欢迎页面
+                //通知appdelegate切换根视图
+                NotificationCenter.default.post(name: NSNotification.Name.AppChangeRootViewController, object: "ZTWelcomeViewController")
             })
-            //在截取到code后 不让webView继续加载网页 阻止用户进一步乱跳网页
-            
+            //在截取到code后 不让webView继续加载网页 阻止用户进一步乱跳网页            
             return false
         }
         

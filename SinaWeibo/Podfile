@@ -8,6 +8,8 @@ target 'SinaWeibo' do
 pod 'AFNetworking'
 pod 'SnapKit'
 pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'YYModel'
   # Pods for SinaWeibo
 
 end

@@ -6,18 +6,55 @@
 //
 //  Created by sharayuki on 2017/1/9.
 //  Copyright © 2017年 sharayuki. All rights reserved.
-//
+//  用户账户视图模型
 
 import UIKit
 //用户缓存路径
 private let path = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as NSString).appendingPathComponent("account.plist")
 
 class ZTUserAccountViewModel: NSObject {
-//用户账户信息属性
+//用户账户信息模型
     var userAccount:ZTUserAount?
+//用户access_token
+    var access_token: String?{
+    
+        return self.userAccount?.access_token
+    }
 //单例设计
     static let shared:ZTUserAccountViewModel = ZTUserAccountViewModel()
     
+    override init() {
+        
+        super.init()
+        
+        self.userAccount = self.loadUserAccount()
+        
+    }
+//登录判断
+    var userLogin : Bool{
+    
+        if userAccount?.access_token != nil && isExpires == false {
+            
+            return true
+        }
+    
+        return false
+    }
+//用户头像URL
+    var url : URL?{
+    
+        return URL(string: userAccount?.avatar_large ?? "")
+    }
+//token过期判断
+    var isExpires : Bool{
+    
+        if userAccount?.expires_date?.compare(Date()) == .orderedDescending {
+            
+            return false
+        }
+        
+        return true
+    }
 //MARK: 获取用户数据以及token
     
     //MARK: 取得令牌
@@ -77,7 +114,9 @@ class ZTUserAccountViewModel: NSObject {
                     
                 }
                 //转换为模型数据
-                let userAount = ZTUserAount(dict: dict)
+                let userAount = ZTUserAount(dict: userInfo)
+                //登录账号
+                self.userAccount = userAount
                 //存储到本地
                 self.saveUserInfo(userAount: userAount)
                 //登录成功
@@ -92,7 +131,6 @@ class ZTUserAccountViewModel: NSObject {
         print(path)
         //归档到本地沙盒
         NSKeyedArchiver.archiveRootObject(userAount, toFile: path)
-        
         
     }
     //从沙盒读取用户账户数据
