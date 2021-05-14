@@ -20,6 +20,9 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
         
         return inV
     }()
+    //懒加载自定义刷新控件
+    var refreshC:ZTRefreashControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if !userLogin{
@@ -41,9 +44,9 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
         
         let retweentNib = UINib(nibName: "ZTRetweetedStatusCell", bundle: nil)
         //实例化refreshControl
-        let refreshC = ZTRefreashControl()
+        refreshC = ZTRefreashControl()
         
-        refreshC.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        refreshC!.addTarget(self, action: #selector(loadData), for: .valueChanged)
         
         tableView.register(cellNib, forCellReuseIdentifier: statusCellid)
         
@@ -56,7 +59,7 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
      //   tableView.tableHeaderView = refreshC
        // tableView.contentInset = UIEdgeInsetsMake(-60, 0, 0, 0)
         
-        view.addSubview(refreshC)
+        view.addSubview(refreshC!)
         
         
     }
@@ -69,7 +72,7 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
                 print("加载错误")
             }
             //加载数据完毕停止动画
-            self.refreshControl?.endRefreshing()
+            self.refreshC?.endRreashing()
             //停止转动小菊花
             self.indicatorView?.stopAnimating()
             
