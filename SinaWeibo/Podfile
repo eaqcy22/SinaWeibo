@@ -10,6 +10,7 @@ pod 'SnapKit'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
 pod 'YYModel'
+pod 'pop'
   # Pods for SinaWeibo
 
 end

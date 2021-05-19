@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class ZTOAuthViewController: UIViewController{
 
     let webView = UIWebView()

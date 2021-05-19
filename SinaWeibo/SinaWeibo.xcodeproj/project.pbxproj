@@ -30,6 +30,8 @@
 		1780CF5B1E226B1100030B82 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF4F1E226B1100030B82 /* SVProgressHUD-dummy.m */; };
 		1780CF5D1E22828700030B82 /* ZTNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */; };
 		1780CF5F1E2296AF00030B82 /* ZTUserAount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */; };
+		1791B6191E27FF0A007545E1 /* ZTComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1791B6181E27FF0A007545E1 /* ZTComposeView.swift */; };
+		1791B61E1E28058D007545E1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 1791B61D1E28058D007545E1 /* UIImage+ImageEffects.m */; };
 		17A2B8461E22B9E400F80371 /* ZTUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */; };
 		17AA3C581E24FC1700A19E7C /* ZTRetweetedStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AA3C571E24FC1700A19E7C /* ZTRetweetedStatusCell.xib */; };
 		17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE3D1E1D2BB10038FF21 /* AppDelegate.swift */; };
@@ -43,9 +45,13 @@
 		17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */; };
 		17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */; };
 		17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */; };
+		17D5768F1E2CFC1D005B9D49 /* ZTPictureSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5768E1E2CFC1D005B9D49 /* ZTPictureSelectorController.swift */; };
 		17DF199A1E1FBC4C000CCA79 /* ZTBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF19991E1FBC4C000CCA79 /* ZTBaseTableViewController.swift */; };
 		17DF199C1E1FBCBB000CCA79 /* ZTLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF199B1E1FBCBB000CCA79 /* ZTLoginView.swift */; };
 		17DF199E1E1FC214000CCA79 /* UIFactory+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DF199D1E1FC214000CCA79 /* UIFactory+Extension.swift */; };
+		17E38D1D1E2A05A9009E148B /* ZTComposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E38D1C1E2A05A9009E148B /* ZTComposeButton.swift */; };
+		17E38D1F1E2A1B0D009E148B /* ZTComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E38D1E1E2A1B0D009E148B /* ZTComposeViewController.swift */; };
+		17E6B4011E2BE72F0015555D /* panci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17E6B4001E2BE72F0015555D /* panci.jpg */; };
 		C8892FA830A49D6D8E9D8D2A /* Pods_SinaWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0012A349849AFA73506ABA /* Pods_SinaWeibo.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +64,7 @@
 		17348E6C1E24C4220039348D /* ZTPicViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPicViewCell.swift; sourceTree = "<group>"; };
 		17348E6E1E24C5CB0039348D /* ZTPicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPicCollectionView.swift; sourceTree = "<group>"; };
 		174165551E26767D0043A1BC /* ZTRefreashControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTRefreashControl.swift; sourceTree = "<group>"; };
-		174463C11E23F87900F42771 /* ZTHomeCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTHomeCellModel.swift; sourceTree = "<group>"; };
+		174463C11E23F87900F42771 /* ZTHomeCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZTHomeCellModel.swift; path = ../Model/ZTHomeCellModel.swift; sourceTree = "<group>"; };
 		176D09D71E23D33200DDAF4E /* ZTStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTStatus.swift; sourceTree = "<group>"; };
 		176D09D91E23E67B00DDAF4E /* ZTHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTHomeViewModel.swift; sourceTree = "<group>"; };
 		1780CF231E22492200030B82 /* ZTOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTOAuthViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 		1780CF511E226B1100030B82 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZTNetworkTool.swift; path = Extension/ZTNetworkTool.swift; sourceTree = "<group>"; };
 		1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTUserAount.swift; sourceTree = "<group>"; };
+		1791B6181E27FF0A007545E1 /* ZTComposeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTComposeView.swift; sourceTree = "<group>"; };
+		1791B61C1E28058D007545E1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		1791B61D1E28058D007545E1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTUserAccountViewModel.swift; sourceTree = "<group>"; };
 		17AA3C571E24FC1700A19E7C /* ZTRetweetedStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTRetweetedStatusCell.xib; sourceTree = "<group>"; };
 		17C1CE3A1E1D2BB10038FF21 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,9 +105,13 @@
 		17C1CE701E1D53E20038FF21 /* ZTOtherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTOtherTableViewController.swift; sourceTree = "<group>"; };
 		17C1CE721E1D54A90038FF21 /* ZTBaseNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTBaseNavController.swift; sourceTree = "<group>"; };
 		17C1CE751E1D558A0038FF21 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		17D5768E1E2CFC1D005B9D49 /* ZTPictureSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTPictureSelectorController.swift; sourceTree = "<group>"; };
 		17DF19991E1FBC4C000CCA79 /* ZTBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTBaseTableViewController.swift; sourceTree = "<group>"; };
 		17DF199B1E1FBCBB000CCA79 /* ZTLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTLoginView.swift; sourceTree = "<group>"; };
 		17DF199D1E1FC214000CCA79 /* UIFactory+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFactory+Extension.swift"; sourceTree = "<group>"; };
+		17E38D1C1E2A05A9009E148B /* ZTComposeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTComposeButton.swift; sourceTree = "<group>"; };
+		17E38D1E1E2A1B0D009E148B /* ZTComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZTComposeViewController.swift; sourceTree = "<group>"; };
+		17E6B4001E2BE72F0015555D /* panci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panci.jpg; sourceTree = "<group>"; };
 		52C4682AAB715ABF44609E64 /* Pods-SinaWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		5897BE609B640D55F99D20AE /* Pods-SinaWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.release.xcconfig"; sourceTree = "<group>"; };
 		8E0012A349849AFA73506ABA /* Pods_SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +186,50 @@
 			path = ../../../Pods/SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		1791B6151E27FEE6007545E1 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				1791B6161E27FEE6007545E1 /* View */,
+				1791B6171E27FEE6007545E1 /* ViewController */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		1791B6161E27FEE6007545E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1791B6181E27FF0A007545E1 /* ZTComposeView.swift */,
+				17E38D1C1E2A05A9009E148B /* ZTComposeButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1791B6171E27FEE6007545E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17E38D1E1E2A1B0D009E148B /* ZTComposeViewController.swift */,
+				17D5768E1E2CFC1D005B9D49 /* ZTPictureSelectorController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1791B61A1E280562007545E1 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				1791B61B1E28058D007545E1 /* UIImageEffects */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		1791B61B1E28058D007545E1 /* UIImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				1791B61C1E28058D007545E1 /* UIImage+ImageEffects.h */,
+				1791B61D1E28058D007545E1 /* UIImage+ImageEffects.m */,
+			);
+			path = UIImageEffects;
+			sourceTree = "<group>";
+		};
 		17C1CE311E1D2BB10038FF21 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +256,7 @@
 				17C1CE441E1D2BB10038FF21 /* Assets.xcassets */,
 				17C1CE491E1D2BB10038FF21 /* Info.plist */,
 				1780CF411E22699F00030B82 /* bridge.h */,
+				17E6B4001E2BE72F0015555D /* panci.jpg */,
 			);
 			path = SinaWeibo;
 			sourceTree = "<group>";
@@ -220,7 +278,6 @@
 			children = (
 				1780CF5E1E2296AF00030B82 /* ZTUserAount.swift */,
 				176D09D71E23D33200DDAF4E /* ZTStatus.swift */,
-				174463C11E23F87900F42771 /* ZTHomeCellModel.swift */,
 				17348E681E247DA20039348D /* ZTUser.swift */,
 				17348E6A1E248F6F0039348D /* ZTPicInfo.swift */,
 			);
@@ -232,6 +289,7 @@
 			children = (
 				1780CF5C1E22828700030B82 /* ZTNetworkTool.swift */,
 				1780CF251E225BF400030B82 /* Common.swift */,
+				1791B61A1E280562007545E1 /* Libs */,
 				1780CF531E226B1100030B82 /* SVProgressHUD */,
 				17C1CE741E1D55370038FF21 /* Extension */,
 			);
@@ -241,6 +299,7 @@
 		17C1CE521E1D318C0038FF21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1791B6151E27FEE6007545E1 /* Compose */,
 				1780CF221E2248CF00030B82 /* OAuth */,
 				17C1CE591E1D318C0038FF21 /* Main */,
 				17C1CE531E1D318C0038FF21 /* Discover */,
@@ -386,6 +445,7 @@
 			children = (
 				17A2B8451E22B9E400F80371 /* ZTUserAccountViewModel.swift */,
 				176D09D91E23E67B00DDAF4E /* ZTHomeViewModel.swift */,
+				174463C11E23F87900F42771 /* ZTHomeCellModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -482,6 +542,7 @@
 				1780CF5A1E226B1100030B82 /* SVProgressHUD.xcconfig in Resources */,
 				17348E671E2464380039348D /* ZTStatusCell.xib in Resources */,
 				17C1CE451E1D2BB10038FF21 /* Assets.xcassets in Resources */,
+				17E6B4011E2BE72F0015555D /* panci.jpg in Resources */,
 				1780CF581E226B1100030B82 /* SVProgressHUD.bundle in Resources */,
 				1780CF591E226B1100030B82 /* Info.plist in Resources */,
 				17AA3C581E24FC1700A19E7C /* ZTRetweetedStatusCell.xib in Resources */,
@@ -547,6 +608,7 @@
 				17C1CE661E1D34C30038FF21 /* ZTHomeTableViewController.swift in Sources */,
 				17348E6B1E248F6F0039348D /* ZTPicInfo.swift in Sources */,
 				17C1CE6A1E1D34F00038FF21 /* ZTMessageTableViewController.swift in Sources */,
+				17E38D1D1E2A05A9009E148B /* ZTComposeButton.swift in Sources */,
 				17C1CE761E1D558A0038FF21 /* UIBarButtonItem+Extension.swift in Sources */,
 				17348E6F1E24C5CB0039348D /* ZTPicCollectionView.swift in Sources */,
 				17DF199A1E1FBC4C000CCA79 /* ZTBaseTableViewController.swift in Sources */,
@@ -559,15 +621,19 @@
 				17C1CE6C1E1D35020038FF21 /* ZTProfileTableViewController.swift in Sources */,
 				17C1CE731E1D54A90038FF21 /* ZTBaseNavController.swift in Sources */,
 				176D09DA1E23E67B00DDAF4E /* ZTHomeViewModel.swift in Sources */,
+				1791B61E1E28058D007545E1 /* UIImage+ImageEffects.m in Sources */,
 				1780CF5D1E22828700030B82 /* ZTNetworkTool.swift in Sources */,
+				1791B6191E27FF0A007545E1 /* ZTComposeView.swift in Sources */,
 				17DF199C1E1FBCBB000CCA79 /* ZTLoginView.swift in Sources */,
 				17C1CE6E1E1D49B40038FF21 /* ZTTabbar.swift in Sources */,
 				174463C21E23F87900F42771 /* ZTHomeCellModel.swift in Sources */,
+				17D5768F1E2CFC1D005B9D49 /* ZTPictureSelectorController.swift in Sources */,
 				17C1CE711E1D53E20038FF21 /* ZTOtherTableViewController.swift in Sources */,
 				17348E6D1E24C4220039348D /* ZTPicViewCell.swift in Sources */,
 				1720690C1E2384E5001C0AEA /* ZTWelcomeViewController.swift in Sources */,
 				17C1CE641E1D34B10038FF21 /* ZTDiscoverTableViewController.swift in Sources */,
 				17C1CE681E1D34DF0038FF21 /* ZTTabBarController.swift in Sources */,
+				17E38D1F1E2A1B0D009E148B /* ZTComposeViewController.swift in Sources */,
 				17DF199E1E1FC214000CCA79 /* UIFactory+Extension.swift in Sources */,
 				17C1CE3E1E1D2BB10038FF21 /* AppDelegate.swift in Sources */,
 				1780CF5F1E2296AF00030B82 /* ZTUserAount.swift in Sources */,
@@ -680,7 +746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -696,7 +762,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.ios.SinaWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

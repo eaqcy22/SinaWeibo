@@ -9,6 +9,7 @@
 //  用户账户视图模型
 
 import UIKit
+import SVProgressHUD
 //用户缓存路径
 private let path = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as NSString).appendingPathComponent("account.plist")
 

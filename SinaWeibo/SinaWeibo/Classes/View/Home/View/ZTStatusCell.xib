@@ -112,7 +112,7 @@
                     </stackView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf8-c6-nqc" userLabel="顶部阴影">
                         <rect key="frame" x="0.0" y="0.0" width="376" height="10"/>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.2032855308219178" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="10" id="MZU-TG-KiJ"/>
                         </constraints>

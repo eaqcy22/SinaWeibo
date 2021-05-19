@@ -66,10 +66,16 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
 //MARK: 加载数据
     func loadData() {
         //加载数据
-        homeViewModel.loadData(isPullUp: (indicatorView?.isAnimating)!) { (isSuccess) in
+        homeViewModel.loadData(isPullUp: (indicatorView?.isAnimating)!) { (isSuccess,count) in
             if !isSuccess{
                 
                 print("加载错误")
+            }
+            //判断是否提示
+            if !self.indicatorView!.isAnimating{
+                
+                self.startTipAnimating(count: count)
+                
             }
             //加载数据完毕停止动画
             self.refreshC?.endRreashing()
@@ -87,7 +93,7 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
         navigationController?.pushViewController(otherVC, animated: true)
         
     }
-    override func didReceiveMemoryWarning() {
+        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -176,6 +182,37 @@ class ZTHomeTableViewController: ZTBaseTableViewController {
                 loadData()
             }
         }
+        //MARK: 加载提示Label的动画
+        func startTipAnimating(count:Int){
+            
+            let tipLabel : UILabel = UILabel(text: "加载了\(count)条微博", font: 14, alignment: .center, preferWidth: 150, lines: 0, color: .gray)
+            
+            view.addSubview(tipLabel)
+            
+            let tipH : CGFloat = 25
+            
+            tipLabel.frame = CGRect(x: (screen_width / 2.0)-75, y: -tipH - 100, width: 150, height: tipH)
+            
+            tipLabel.backgroundColor = UIColor.orange
+            
+            UIView.animate(withDuration: 1, animations: {
+                
+                tipLabel.frame.origin.y = 0
+                
+            }) { (true) in
+                UIView.animate(withDuration: 1, animations: {
+                    
+                    tipLabel.frame.origin.y = 0
+                    
+                }, completion: { (true) in
+                    
+                    tipLabel.removeFromSuperview()
+                    
+                })
+                
+            }
+        }
+
 }
 
 

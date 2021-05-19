@@ -51,9 +51,9 @@ class ZTStatusCell: UITableViewCell {
     
         didSet {
             //绑定数据
-            lb_time.text = viewModel?.status?.created_at
+            lb_time.text = viewModel?.timeText
             
-            lb_source.text = viewModel?.status?.source
+            lb_source.text = viewModel?.sourceText
             
             lb_content.text = viewModel?.status?.text
             
@@ -68,18 +68,21 @@ class ZTStatusCell: UITableViewCell {
             rankView.image = viewModel?.mbrankImage
             //设置图片视图宽高
             let count = viewModel?.imageInfo?.count ?? 0
-            
-            let pSize = caclulatePicSize(count: CGFloat(count))
-            
           //  print(pSize)
             //修改图片视图的宽高
+            let result = caclulatePicSize(count: count)
+            
+            let pSize = result.pSize
+            
             picHight.constant = pSize.height
             
             picWidth.constant = pSize.width
+                
             //设置图片视图的模型数组
             picView.pic_url = viewModel?.imageInfo
             //FlowLayout设置
-            FlowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+            FlowLayout.itemSize = result.itemSize
+                
             FlowLayout.minimumInteritemSpacing = CGFloat(picWidthMargin)
             
             FlowLayout.minimumLineSpacing = CGFloat(picWidthMargin)
@@ -106,23 +109,31 @@ class ZTStatusCell: UITableViewCell {
         
     }
 //图片宽高计算方法
-    private func caclulatePicSize(count:CGFloat) -> CGSize{
+    private func caclulatePicSize(count:Int) -> (pSize: CGSize,itemSize: CGSize){
         //没有图片
         if count == 0{
         
-            return CGSize.zero
+            return (CGSize.zero,CGSize.zero)
         }
         //单张图片 日后修改
         if count == 1{
-        
-            return CGSize(width: itemWidth, height: itemWidth)
+            //计算图片的大小
+            if let image = SDWebImageManager.shared().imageCache.imageFromDiskCache(forKey: viewModel?.imageInfo?.last?.wap360 ?? ""){
+                
+                let imageSize = image.size
+                
+                return (imageSize,imageSize)
+            }
+            
+            
+            return (CGSize(width: itemWidth, height: itemWidth),CGSize(width: itemWidth, height: itemWidth))
         }
         //四张图片
         if count == 4{
         
             let width = itemWidth * 2.01 + picWidthMargin
             
-            return CGSize(width: width, height: width)
+            return (CGSize(width: width, height: width),CGSize(width: itemWidth, height: itemWidth))
         }
         
         //其他多张
@@ -131,7 +142,7 @@ class ZTStatusCell: UITableViewCell {
         
         let hight = itemWidth * CGFloat(row) + picWidthMargin * CGFloat(row - 1)
         
-        return CGSize(width: maxWidth , height: hight)
+        return (CGSize(width: maxWidth , height: hight),CGSize(width: itemWidth , height: itemWidth))
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
